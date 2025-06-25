@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فرحة | الصفحة الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #7c4d8a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('images/sala.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .halls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .service-box {
+      background-color: #fff;
+      border: 1px solid #e0ccec;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .service-box a {
+      text-decoration: none;
+      color: #7c4d8a;
+      font-weight: bold;
+    }
+
+    .service-box a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #d1a954;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #b88d3f;
+    }
+
+    footer {
+      background-color: #f2e8f7;
+      color: #444;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .social {
+      margin-top: 0.5rem;
+    }
+
+    .social a {
+      margin: 0 0.5rem;
+      color: #7c4d8a;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .card img {
+        height: 150px;
+      }
+
+      .section {
+        padding: 1rem;
+      }
+
+      .card-title {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="شعار فرحة">
+      <strong>فرحة</strong>
+    </div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">القاعات</a>
+      <a href="#">الخدمات الإضافية</a>
+      <a href="#">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>"فرحة" منصة لحجز قاعات الحفلات بسهولة واحترافية</h1>
+    <p>احجز لحظاتك السعيدة معنا</p>
+  </section>
+
+  <section class="section">
+    <h2>أبرز القاعات</h2>
+    <div class="halls">
+      <div class="card">
+        <img src="images/tyoti.jpeg" alt="قاعة تيوتي" />
+        <div class="card-content">
+          <div class="card-title">قاعة تيوتي</div>
+          <a class="btn" href="tiouti.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/nabo.jpeg" alt="قاعة النبو" />
+        <div class="card-content">
+          <div class="card-title">قاعة النبو</div>
+          <a class="btn" href="nabou.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/ines.jpeg" alt="قاعة ايناس" />
+        <div class="card-content">
+          <div class="card-title">قاعة ايناس</div>
+          <a class="btn" href="ines.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/hanaa.jpeg" alt="قاعة الهناء" />
+        <div class="card-content">
+          <div class="card-title">قاعة الهناء</div>
+          <a class="btn" href="hanaa.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/jazira.jpeg" alt="قاعة الجزيرة" />
+        <div class="card-content">
+          <div class="card-title">قاعة الجزيرة</div>
+          <a class="btn" href="jazira.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/ali.jpeg" alt="قاعة علي الشريف" />
+        <div class="card-content">
+          <div class="card-title">قاعة علي الشريف</div>
+          <a class="btn" href="alisharif.html">اطّلع على المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>الخدمات الإضافية</h2>
+    <div class="services">
+      <div class="service-box">
+        <a href="#">📸 خدمة التصوير الاحترافي</a>
+      </div>
+      <div class="service-box">
+        <a href="#">🎶 الحجز لدى فرقة موسيقية</a>
+      </div>
+      <div class="service-box">
+        <a href="#">🚫 فرقة خاصة – ممنوع التصوير</a>
+      </div>
+    </div>
+  </section>
+  
+<footer>
+  <div>© منصة فرحة 2025 – جميع الحقوق محفوظة</div>
+
+  <div class="social">
+    <a href="https://www.facebook.com/share/1AjhdDMTyX/">فيسبوك</a>
+    <a href="https://www.instagram.com/bahdjatkom?igsh=NXR4cG5yZmlkcG5o">إنستغرام</a>
+    <a href="+213657975272">واتساب</a>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <a href="login.html" style="font-size: 12px; color: #999; text-decoration: none;">دخول المشرف</a>
+  </div>
+</footer>
+
+</body>
+</html>
